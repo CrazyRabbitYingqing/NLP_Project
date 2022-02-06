@@ -21,6 +21,7 @@ Also, supervised modeling methods like some classification models will be practi
 ### Tools:
 
 Python text processing libraries/ tools: NLTK, spaCy, gensim, sklearn
+
 Visualization: seaborn
 
 ### MVP Goal:
