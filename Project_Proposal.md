@@ -10,7 +10,7 @@ The data set title: Coronavirus tweets NLP
 
 The dataset including columns: Tweet Location, Time, Twitter Text, Sentiment Label
 
-The entire dataset contains more than 40k unique Twitter text that posted between mid-March to mid-April 2020
+The entire dataset contains more than 40k unique Twitter texts that posted between mid-March to mid-April 2020
 
 Supplemental data: Covid daily cases at the Tweet locations
 
