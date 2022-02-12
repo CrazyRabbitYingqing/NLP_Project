@@ -31,7 +31,7 @@ I also created a baseline topic modeling model using CountVectorizer and NMF top
  'buy-make-safe-time-work-hand-help-stay-home-need',
  'market-low-supply-new-price-global-amid-oil-demand-pandemic']
  
-   ![wordcloud](image.png) 
+   ![WordCloud](image.png) 
    - Prelim findings for Dynamic topic modeling
      I plot the time series for the number of tweets everyday of the 5 sentiment categories, there are interesting trends that can lead to Dynamic topic modeling in the next stage.
      ![](time_trends.png) 
