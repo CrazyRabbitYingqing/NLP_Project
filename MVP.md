@@ -16,7 +16,7 @@ I also created a baseline topic modeling model using CountVectorizer and NMF top
 ### Recent Findings
  - Classification model
    I got the confusion matrix below with 5 targets:
-   ![](image.png) 
+   ![](matrix.png) 
  - NMF topic modeler
    I got the 10 topic components with the most related 10 words for each components as well as the wordcloud plot:
    
@@ -31,9 +31,9 @@ I also created a baseline topic modeling model using CountVectorizer and NMF top
  'buy-make-safe-time-work-hand-help-stay-home-need',
  'market-low-supply-new-price-global-amid-oil-demand-pandemic']
  
-   ![](image.png) 
+   ![wordcloud](image.png) 
    - Prelim findings for Dynamic topic modeling
      I plot the time series for the number of tweets everyday of the 5 sentiment categories, there are interesting trends that can lead to Dynamic topic modeling in the next stage.
-     ![](image.png) 
+     ![](time_trends.png) 
 ### Moving Forward
 I will continue with better topic modeling tools that can anchor the certain selected topics. I will continue with dynamic modeling to find out the trends of tweet sentiment related to Covid daily cases.
