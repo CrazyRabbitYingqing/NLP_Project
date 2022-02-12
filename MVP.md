@@ -1,32 +1,39 @@
 
-Minimum Viable Product (MVP) - Tweets Sentiment Analysis
+## Minimum Viable Product (MVP) - Tweets Sentiment Analysis
 
-The goal of this project is to create a recommendation system to make a movie recommendation based on the favorite Disney movies of two different users.
+The goal of this project is to perform sentiment analysis for Covid19 related tweets.
 
-Solution Path
-To do this, I am using movie summaries from Disney A to Z (Links to an external site.)—which generally include a brief plot overview, award highlights, character names, and actor credits (longer than 100 words, on average)—for every movie produced and released by Walt Disney Productions. The data consist of over 2100 movies, spanning films released during the 1920s (Walt Disney's Alice Comedies) through early 2020 (Pixar's Onward).
+### Solution Path
+To do this, I'm using more than 40k tweets collectd between March 2020 and April 2020. Supervised classification will be performed based on the existed sentiment categories using the classification tools from the last module. Unsupervised topic modeling will be performed as well as Dynamic topic modeling.
 
-Work Completed
-In pre-processing the data, I removed all digits and punctuation, I used spaCy in order to identify named entities (e.g., characters, actors), and to remove stop words. I also created a custom tokenizer to merge named entities into a single token, and to lemmatize all other tokens.
+### Work Completed
+In pre-processing the data, I removed all digits and punctuation, I used nltk.corpus to remove stop words. Also, the tweets contains a lot of accent words and fractions, which were removed as well.
 
-To begin building a topic model, I created a few baseline models using the CountVectorizer and TfidfVectorizer, with an NMF topic modeler and a small number of topic components (n = 10); however, because large portions of the corpus are made up of extensive film series featuring the same characters/themes (e.g., the Alice Comedies, Mickey Mouse and friends, several educational and safety series), CorEx, which allows "anchoring" of topic words, for semi-supervised topic modeling, can push the topic model towards these specific, previously identified subsets of words/characters.
+After data preprocessing, I created a baseline classification model using CountVectorizer and Logistic Regression. 
 
-Recent Findings
-I have opted to tune a model using the CountVectorizer and a CorEx topic model. Though I am continuing to tune the number of topics to use in this model, I have determined some important anchors to separate topics, including:
+I also created a baseline topic modeling model using CountVectorizer and NMF topic modeler with a small number of topic components (n=10).
 
-['mickey', 'mickey mouse', 'pluto', 'silly', 'symphony']
-['donald', 'donald duck', 'nephew']
-['oswald', 'lucky', 'rabbit']
-['educational']
-['pooh', 'piglet', 'eeyore']
-With only minimal tuning of the anchor strength, the topic model [also] produces some interesting sample topics, such as:
-
-Mickey Mouse: cartoon, donald, donald duck, mickey mouse, mickey, pluto, silly, symphony, jack hannah, jack kinney
-Animated films: animate, premiere, disney, hollywood, short circuit, artist, program, drawing, the walt disney animation studios short circuit, talent
-Award winning films: academy award, nominate, academy, award, best, winner, james algar, featurette, narrate, nature
-Sports films: high, team, coach, school, game, football, player, championship, student, teacher
-Marvel movies: texas, mission, force, format, marvel studios, threat, international, surface, marvel, protect
-Moving Forward
-I will continue to tune (1) the anchor words and (2) the number of topics modeled to make the topics more coherent/interpretable. The final topic model will be used to build a basic recommendation system that takes in the favorite Disney movies of two different users and recommends a set of movies that are most similar to both.
-
+### Recent Findings
+ - Classification model
+   I got the confusion matrix below with 5 targets:
+   ![](image.png) 
+ - NMF topic modeler
+   I got the 10 topic components with the most related 10 words for each components as well as the wordcloud plot:
+   
+['chain-going-local-bank-buy-supply-demand-stock-panic-food',
+ 'day-went-work-thank-today-retail-going-like-grocery-store',
+ 'positive-market-response-help-crisis-impact-outbreak-spread-retail-covid',
+ 'delivery-work-time-today-day-going-like-local-staff-supermarket',
+ 'really-time-dont-buy-stop-think-going-like-panic-people',
+ 'health-spending-impact-time-crisis-protection-business-behavior-new-consumer',
+ 'support-local-going-grocery-shop-like-new-time-delivery-shopping',
+ 'went-water-panic-buy-roll-stock-like-hand-toilet-paper',
+ 'buy-make-safe-time-work-hand-help-stay-home-need',
+ 'market-low-supply-new-price-global-amid-oil-demand-pandemic']
  
+   ![](image.png) 
+   - Prelim findings for Dynamic topic modeling
+     I plot the time series for the number of tweets everyday of the 5 sentiment categories, there are interesting trends that can lead to Dynamic topic modeling in the next stage.
+     ![](image.png) 
+### Moving Forward
+I will continue with better topic modeling tools that can anchor the certain selected topics. I will continue with dynamic modeling to find out the trends of tweet sentiment related to Covid daily cases.
