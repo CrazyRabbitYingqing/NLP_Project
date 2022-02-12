@@ -14,7 +14,7 @@ After data preprocessing, I created a baseline classification model using CountV
 I also created a baseline topic modeling model using CountVectorizer and NMF topic modeler with a small number of topic components (n=10).
 
 ### Recent Findings
- - Classification model
+ - Classification model (Study on Classfication model in the next step will be limited)
  
    I got the confusion matrix below with 5 targets:
    
@@ -45,4 +45,4 @@ I also created a baseline topic modeling model using CountVectorizer and NMF top
      
 ### Moving Forward
 
-I will continue with better topic modeling tools that can anchor the certain selected topics. I will continue with dynamic modeling to find out the trends of tweet sentiment related to Covid daily cases.
+I will continue with topic modeling tools that can anchor the certain selected topics. I will also practice tuning hyperparameters for the NMF model to get better topics. I will continue with dynamic modeling to find out the trends of tweet sentiments with time.
