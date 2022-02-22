@@ -23,6 +23,30 @@ Supplemental data: Covid daily cases from [NYTimes_github](https://github.com/ny
 ### Algorithms
 
 First, Data set preprocessing was conducted using NLTK LancasterStemmer, NLTK stopwords package, python remove function, and pandas dropna function. Second, text vectorization was conducted with both CountVectorizer and TF-IDF Vectorizer, the ngram was set to only one word. Third, two topic modeling tools were adopted: NMF and LSA, in which the tools applied with TF-IDF Vectorizer data ran slow. Fourth, Dynamic topic modeling was performed by python gensim ldaseqmodel for the text set during 44 days, the model runs for 7 hours. In the end, VADER SentimentIntensityAnalyzer was adopted to predict the sentiment of the tweets.
+
+Final Topic Modeling tool selected: TF-IDF Vectorizer + NMF
+
+Five selected Topics:
+Topic 1 - "Panic"
+
+'demand, need, panic, stock, food, hoard, bank'
+
+Topic 2 - "Grocery"
+
+'like, go, work, groceri, store, local, today, day, shop'
+
+Topic 3 - "Retail"
+
+'impact, pandem, shop, consum, covid, protect, retail, oil, outbreak'
+
+Topic 4 - "Social" 
+
+'time, work, shop, peopl, supermarket, social, home, staff'
+
+Topic 5 - "Toilet Paper"
+
+'roll, peopl, hand, toilet, paper, buy, shortag, water, hoard'
+
 ### Tools
 Python libraries:
 
