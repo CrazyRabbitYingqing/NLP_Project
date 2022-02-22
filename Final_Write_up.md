@@ -4,13 +4,13 @@ Yingqing Qiu, Feburary, 2022
 
 ### Abstract
 
-This NLP unsupervised learning project will answer the question about the hot topics and the sentiment of the twitter users to Covid-19 at the beginning of the pandemic. With the topic modeling and sentiment analysis results, social scientists and psychologists can proceed with studies on how people express emotions and sentiments and what they most care about when dealing with catastrophic events for the usage of future government policymaking. This project adopts topic modeling, dynamic topic modeling, and sentiment analysis python packages. The conclustions include the selection of the most efficient topic modeling technique, interpretive of the Five (5) most related topics and the time evolution of these topic probabilities, as well as the sentiment predictions. Further evaluations and discusstions will be provided during the presentation.
+This NLP unsupervised learning project will answer the question about the hot topics and the sentiment of the twitter users to Covid-19 at the beginning of the pandemic. With the topic modeling and sentiment analysis results, social scientists and psychologists can proceed with studies on how people express emotions and sentiments and what they are most caring about when dealing with catastrophic events for the usage of future government policymaking. This project adopts topic modeling, dynamic topic modeling, and sentiment analysis python packages. The conclustions include the selection of the most efficient topic modeling technique, interpretive of the Five (5) most related topics and the time evolution of these topic probabilities, as well as the sentiment predictions. Further evaluations and discusstions will be provided during the presentation.
 
-### design
+### Design
 
-First, the data set was preprocessed with python packages, including removing punctuation marks, website URLs, numerics, and accent alphabet. After the preprocessing, the tweets were vectorized then became sparse matrices for further topic modeling. Multiple topiv modeling techniques were examined to generated the top five most reasonable topics. Meanwhile, dynamic topic modeling technique was also applied to study the possibilities of the topics during the time span.In the end, a sentiment analysis was performed to support the analysis.
+First, the data set was preprocessed with python packages, including removing punctuation marks, website URLs, numerics, and accent alphabet. After the preprocessing, the tweets were vectorized then became sparse matrices for further topic modeling. Multiple topic modeling techniques were examined to generate the top five most reasonable topics. Meanwhile, dynamic topic modeling technique was also applied to study the possibilities of the topics during the time span. In the end, a sentiment analysis was performed to support the analysis.
 
-### data
+### Data
 
 Data set: Kaggle data set - [Coronavirus tweets NLP](https://www.kaggle.com/datatattle/covid-19-nlp-text-classification)
 
@@ -20,10 +20,10 @@ The entire dataset contains more than 40k unique Tweet documents that posted bet
 
 Supplemental data: Covid daily cases from [NYTimes_github](https://github.com/nytimes/covid-19-data/blob/master/us.csv).
 
-### algorithms
+### Algorithms
 
-First, Data set preprocessing was completes using NLTK LancasterStemmer, NLTK stopwords package, python remove function, and pandas dropna function. Second, text vectorization was conducted with both CountVectorizer and TF-IDF Vectorizer, the ngram was set to only one word. Third, two topic modeling tools were adopted: NMF and LSA, in which the tools applied with TF-IDF Vectorizer data ran slow. Fourth, Dynamic topic modeling was performed by python gensim ldaseqmodel for the text set during 44 days, the model runs for 7 hours. In the end, VADER SentimentIntensityAnalyzer was adopted to predict the sentiment of the tweets.
-### tools
+First, Data set preprocessing was conducted using NLTK LancasterStemmer, NLTK stopwords package, python remove function, and pandas dropna function. Second, text vectorization was conducted with both CountVectorizer and TF-IDF Vectorizer, the ngram was set to only one word. Third, two topic modeling tools were adopted: NMF and LSA, in which the tools applied with TF-IDF Vectorizer data ran slow. Fourth, Dynamic topic modeling was performed by python gensim ldaseqmodel for the text set during 44 days, the model runs for 7 hours. In the end, VADER SentimentIntensityAnalyzer was adopted to predict the sentiment of the tweets.
+### Tools
 Python libraries:
 
 NLTK, re, gensim, sklearn, numpy, vaderSentiment
@@ -32,7 +32,7 @@ Visualization:
 
 Matplotlib, Canvas built-in pie plotter
 
-### communication
+### Communication
 
 The presentation slides contain all the results visulization and interpretation.
 
