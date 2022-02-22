@@ -11,21 +11,29 @@ This NLP unsupervised learning project will answer the question about the hot to
 First, the data set was preprocessed with python packages, including removing punctuation marks, website URLs, numerics, and accent alphabet. After the preprocessing, the tweets were vectorized then became sparse matrices for further topic modeling. Multiple topiv modeling techniques were examined to generated the top five most reasonable topics. Meanwhile, dynamic topic modeling technique was also applied to study the possibilities of the topics during the time span.In the end, a sentiment analysis was performed to support the analysis.
 
 ### data
+
 Data set: Kaggle data set - Coronavirus tweets NLP
 
 The dataset including columns: Tweet Location, Time, Twitter Text, Sentiment Label
 
-The entire dataset contains more than 40k unique Tweet documents that posted between early-March to mid-April 2020 when the COVID Cases 
+The entire dataset contains more than 40k unique Tweet documents that posted between early-March to mid-April 2020 when the COVID Cases start to rise up in the United States.
 
 Supplemental data: Covid daily cases from CDC.
 
 ### algorithms
+
+First, Data set preprocessing was completes using NLTK LancasterStemmer, NLTK stopwords package, python remove function, and pandas dropna function. Second, text vectorization was conducted with both CountVectorizer and TF-IDF Vectorizer, the ngram was set to only one word. Third, two topic modeling tools were adopted: NMF and LSA, in which the tools applied with TF-IDF Vectorizer data ran slow. Fourth, Dynamic topic modeling was performed by python gensim ldaseqmodel for the text set during 44 days, the model runs for 7 hours. In the end, VADER SentimentIntensityAnalyzer was adopted to predict the sentiment of the tweets.
 ### tools
-Python text processing libraries:
-NLTK, spaCy, gensim, sklearn
-Visualization: Matlib
+Python libraries:
+
+NLTK, re, gensim, sklearn, numpy, vaderSentiment
+
+Visualization: 
+
+Matplotlib, Canvas built-in pie plotter
 
 ### communication
 
+The presentation slides contains all the results visulization and interpretation.
 
 
