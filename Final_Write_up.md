@@ -11,28 +11,21 @@ This NLP unsupervised learning project will answer the question about the hot to
 First, the data set was preprocessed with python packages, including removing punctuation marks, website URLs, numerics, and accent alphabet. After the preprocessing, the tweets were vectorized then became sparse matrices for further topic modeling. Multiple topiv modeling techniques were examined to generated the top five most reasonable topics. Meanwhile, dynamic topic modeling technique was also applied to study the possibilities of the topics during the time span.In the end, a sentiment analysis was performed to support the analysis.
 
 ### data
-### algorithms
-### tools
-### communication
-
-
-Data Description:
-I plan to use a dataset from Kaggle
-
-The data set title: Coronavirus tweets NLP
+Data set: Kaggle data set - Coronavirus tweets NLP
 
 The dataset including columns: Tweet Location, Time, Twitter Text, Sentiment Label
 
-The entire dataset contains more than 40k unique Twitter texts that posted between mid-March to mid-April 2020
+The entire dataset contains more than 40k unique Tweet documents that posted between early-March to mid-April 2020 when the COVID Cases 
 
-Supplemental data: Covid daily cases at the Tweet locations
+Supplemental data: Covid daily cases from CDC.
 
-I will use the dataset to build an unsupervised learning model including dimensionality reduction/topic modeling and clustering in Python.
+### algorithms
+### tools
+Python text processing libraries:
+NLTK, spaCy, gensim, sklearn
+Visualization: Matlib
 
-Also, supervised modeling methods like some classification models will be practiced as a comparison.
+### communication
 
-Tools:
-Python text processing libraries/ tools: NLTK, spaCy, gensim, sklearn
 
-Visualization: seaborn
 
