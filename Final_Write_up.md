@@ -34,6 +34,6 @@ Matplotlib, Canvas built-in pie plotter
 
 ### communication
 
-The presentation slides contains all the results visulization and interpretation.
+The presentation slides contain all the results visulization and interpretation.
 
 
