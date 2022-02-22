@@ -12,13 +12,13 @@ First, the data set was preprocessed with python packages, including removing pu
 
 ### data
 
-Data set: Kaggle data set - Coronavirus tweets NLP
+Data set: Kaggle data set - [Coronavirus tweets NLP](https://www.kaggle.com/datatattle/covid-19-nlp-text-classification)
 
 The dataset including columns: Tweet Location, Time, Twitter Text, Sentiment Label
 
 The entire dataset contains more than 40k unique Tweet documents that posted between early-March to mid-April 2020 when the COVID Cases start to rise up in the United States.
 
-Supplemental data: Covid daily cases from CDC.
+Supplemental data: Covid daily cases from [NYTimes_github](https://github.com/nytimes/covid-19-data/blob/master/us.csv).
 
 ### algorithms
 
