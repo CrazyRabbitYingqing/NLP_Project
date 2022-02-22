@@ -1,4 +1,4 @@
-## NLP Project - COVID-19 Tweets Topic Modeling & Sentiment Analysis
+## NLP Project Final Write-up - COVID-19 Tweets Topic Modeling & Sentiment Analysis
 
 Yingqing Qiu, Feburary, 2022
 
